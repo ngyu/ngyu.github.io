@@ -10,7 +10,7 @@
 &lt;p&gt;THEME = "/home/user/pelican-themes/mnmlist"&lt;/p&gt;
 &lt;p&gt;Save the changes to your settings file and then regenerate your site by using the Makefile you should already have set up using pelican-quickstart:&lt;/p&gt;
 &lt;p&gt;make html&lt;/p&gt;
-&lt;p&gt;Themes can also be specified directly via the -t ~/pelican-themes/theme-name parameter to the pelican command. If you want to edit your theme, make sure that any edits you make are made to the copy stored in ~/pelican-themes/theme-name. Any changes made to files stored in your site's output directory will be deleted the next time you generate your site.&lt;/p&gt;</summary></entry><entry><title>GitHub Pages using Pelican in ubuntu</title><link href="http://ngyu.github.io/posts/2011/12/03/github-pages-using-pelican-in-ubuntu/" rel="alternate"></link><updated>2011-12-03T10:20:00+01:00</updated><author><name>ngyu</name></author><id>tag:ngyu.github.io,2011-12-03:posts/2011/12/03/github-pages-using-pelican-in-ubuntu/</id><summary type="html">&lt;ol&gt;
+&lt;p&gt;Themes can also be specified directly via the -t ~/pelican-themes/theme-name parameter to the pelican command. If you want to edit your theme, make sure that any edits you make are made to the copy stored in ~/pelican-themes/theme-name. Any changes made to files stored in your site's output directory will be deleted the next time you generate your site.&lt;/p&gt;</summary><category term="Pelican"></category></entry><entry><title>GitHub Pages using Pelican in ubuntu</title><link href="http://ngyu.github.io/posts/2011/12/03//" rel="alternate"></link><updated>2011-12-03T10:20:00+01:00</updated><author><name>ngyu</name></author><id>tag:ngyu.github.io,2011-12-03:posts/2011/12/03//</id><summary type="html">&lt;ol&gt;
 &lt;li&gt;virtual Python environments&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;install pip before installing virtualenv&lt;/h1&gt;
@@ -86,4 +86,4 @@ pelican -s pelicanconf.py content -o output
 cd output
 git add .
 git commit -m "Update"
-git push&lt;/p&gt;</summary></entry><entry><title>My First Review</title><link href="http://ngyu.github.io/posts/2010/12/03/my-first-review/" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>ngyu</name></author><id>tag:ngyu.github.io,2010-12-03:posts/2010/12/03/my-first-review/</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary></entry></feed>
+git push&lt;/p&gt;</summary><category term="Pelican"></category><category term="GitHub"></category></entry><entry><title>My First Review</title><link href="http://ngyu.github.io/posts/2010/12/03/my-first-review/" rel="alternate"></link><updated>2010-12-03T10:20:00+01:00</updated><author><name>ngyu</name></author><id>tag:ngyu.github.io,2010-12-03:posts/2010/12/03/my-first-review/</id><summary type="html">&lt;p&gt;Following is a review of my favorite mechanical keyboard.&lt;/p&gt;</summary><category term="test"></category></entry></feed>
