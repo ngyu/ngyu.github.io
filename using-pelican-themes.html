@@ -3,7 +3,7 @@
 
 <head>
 
-    <title>Entries Category "Review" - not great yet useful</title>
+    <title>Using Pelican Themes - not great yet useful</title>
 
     <!-- meta -->
     <meta charset="utf-8" />
@@ -12,7 +12,7 @@
     <meta name="dc.license" content="">
 
     <!-- favicon -->
-    <link rel="icon" href="../theme/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./theme/favicon.ico" type="image/x-icon">
 
     <!-- newsfeeds -->
 
@@ -22,9 +22,9 @@
     <![endif]-->
    
     <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../theme/css/simplegrid.css" type="text/css">
-    <link rel="stylesheet" href="../theme/css/main.css" type="text/css">
-    <link rel="stylesheet" href="../theme/css/pygments.css" type="text/css">
+    <link rel="stylesheet" href="./theme/css/simplegrid.css" type="text/css">
+    <link rel="stylesheet" href="./theme/css/main.css" type="text/css">
+    <link rel="stylesheet" href="./theme/css/pygments.css" type="text/css">
     <!--[if lt IE 8]>
         <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" type="text/css">
     <![endif]-->
@@ -37,10 +37,10 @@
    <div class="grid grid-pad">
      <div class="col-1-1">        
        <ul id="mainnav">
-          <li><a href="..">home</a></li>
+          <li><a href=".">home</a></li>
        </ul>
-       <div id="blogtitle"><a href="..">not great yet useful</a></div>
-       <div id="blogsubtitle"><a href=".."></a></div>
+       <div id="blogtitle"><a href=".">not great yet useful</a></div>
+       <div id="blogsubtitle"><a href="."></a></div>
      </div>
     </div>
 
@@ -48,28 +48,29 @@
        <div id="left-side" class="col-8-12">
           <section id="content" class="hyphenate">
 
-    <h1 class="title">Entries Category “Review”</h1>        <article class="entry-overview">
-            <div class="date">Tue 03 December 2013</div>
-            <div class="detail">
-                <header><h3>
-                    <a href="../using-pelican-themes.html" rel="bookmark" title="Permalink to Using Pelican Themes">
-                        Using Pelican Themes
-                    </a>
-                </h3></header>
-                <div class="summary">Using Pelican Themes (https://github.com/getpelican/pelican-themes) These instructions assume you have already read all the Pelican documentation, have a working site, and would now like to apply a non-default theme. First, choose a location to hold your themes. For this example, we'll use the directory ~/pelican-themes, but ...</div>
-            </div>
-        </article>
-        <article class="entry-overview">
-            <div class="date">Fri 03 December 2010</div>
-            <div class="detail">
-                <header><h3>
-                    <a href="../my-first-review.html" rel="bookmark" title="Permalink to My First Review">
-                        My First Review
-                    </a>
-                </h3></header>
-                <div class="summary">Following is a review of my favorite mechanical keyboard.</div>
-            </div>
-        </article>
+    <h1 class="title">Using Pelican Themes</h1>
+
+        <div class="date">
+            <p>written on Tue 03 December 2013
+            by <a rel="author" href="./pages/aboutme.html">ngyu</a></p>
+        </div>
+
+    <div class="clearboth">
+        <p>Using Pelican Themes (https://github.com/getpelican/pelican-themes)</p>
+<p>These instructions assume you have already read all the Pelican documentation, have a working site, and would now like to apply a non-default theme.</p>
+<p>First, choose a location to hold your themes. For this example, we'll use the directory ~/pelican-themes, but yours could be different. Clone the pelican-themes repository to that location on your local machine:</p>
+<p>git clone --recursive https://github.com/getpelican/pelican-themes ~/pelican-themes</p>
+<p>Now you should have your pelican-themes repository stored at ~/pelican-themes/.</p>
+<p>To use one of the themes, edit your Pelican settings file to include this line:</p>
+<p>THEME = "/home/user/pelican-themes/theme-name"</p>
+<p>So, for instance, to use the mnmlist theme, you would edit your settings file to include:</p>
+<p>THEME = "/home/user/pelican-themes/mnmlist"</p>
+<p>Save the changes to your settings file and then regenerate your site by using the Makefile you should already have set up using pelican-quickstart:</p>
+<p>make html</p>
+<p>Themes can also be specified directly via the -t ~/pelican-themes/theme-name parameter to the pelican command. If you want to edit your theme, make sure that any edits you make are made to the copy stored in ~/pelican-themes/theme-name. Any changes made to files stored in your site's output directory will be deleted the next time you generate your site.</p>
+    </div>
+
+
 
           </section>
        </div>
@@ -105,8 +106,8 @@
 <div class="section-container">
    <h3>Categories</h3>
    <ul>
-        <li><a href="../category/misc.html">misc <i class="fa fa-folder-open fa-fw"></i></a></li>
-        <li><a href="../category/review.html">Review <i class="fa fa-folder-open fa-fw"></i></a></li>
+        <li><a href="./category/misc.html">misc <i class="fa fa-folder-open fa-fw"></i></a></li>
+        <li><a href="./category/review.html">Review <i class="fa fa-folder-open fa-fw"></i></a></li>
    </ul>
 </div>
 
@@ -136,7 +137,7 @@
     </script>
  
 
-    <script type="text/javascript" src="../theme/js/hyphenator.js"></script>
+    <script type="text/javascript" src="./theme/js/hyphenator.js"></script>
     <script type="text/javascript">
       Hyphenator.config({
           donthyphenateclassname: 'docutils',

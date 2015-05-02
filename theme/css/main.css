@@ -1,185 +1,265 @@
-/*
-    Theme Name: mnmlist
-    Theme URI: http://mathieu.agopian.info/mnmlist/theme.html
-    Description: Theme adapted from http://mnmlist.com/theme/ from Leo Babauta, a very clean minimalist theme, without comments, search, archives or other features.
-    Author: Mathieu Agopian
-    Autor URI: http://mathieu.agopian.info
-
-    This theme is uncopyrighted, free, and offered as is.
-
-    Update (inverted colors, minor changes) by Tastalian, 2013-03-20.
-*/
-
-@import url("pygment.css");
-
-/* line 13, ../../compass/src/main.scss */
 body {
-  background: #1E1E1E;
-  color: #EEE;
-  font: 20px Hoefler Text, bodyfont, serif;
-  line-height: 30px;
-  max-width: 30em;
-  margin: 60px 14px 0 64px;
+    font-family: 'Linden Hill', Georgia, serif;
+    font-size: 19px;
 }
 
-/* line 28, ../../compass/src/main.scss */
+#blogtitle {
+    font-size: 3em;
+}
+#blogtitle a, #blogtitle a:hover, #blogtitle a:visited {
+    color: #000;
+    text-decoration: none;
+}
+#blogsubtitle {
+}
+#blogsubtitle a, #blogsubtitle a:hover, #blogsubtitle a:visited {
+    color: #000;
+    text-decoration: overline;
+}
+#mainnav {
+    margin: 0;
+    padding: 15px 0 0;
+    font-size: 20px;
+    float: right;
+}
+
+#mainnav li {
+    list-style-type: none;
+    text-align: center;
+    display: inline-block;
+}
+
+#mainnav li:before {
+    content: '{\00A0';
+}
+#mainnav li:after {
+    content: '\00A0}';
+}
+
+#content {
+    margin-top: 40px;
+}
+
+#content p {
+    text-align: justify;
+    margin-top: 0;
+}
+
+div.highlight pre, pre.literal-block {
+    margin: 5px;
+    font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 14px;
+}
+
+div.highlight, pre.literal-block {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+pre.literal-block {
+    padding: 5px;
+}
+
+tt.literal {
+    font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    background-color: #eee;
+    padding: 2px 5px;
+    font-size: 0.8em;
+}
+
+cite {
+    font-family: 'Consolas', 'Menlo', 'Deja Vu Sans Mono', 'Bitstream Vera Sans Mono', monospace;
+    font-size: 13px;
+    font-style: normal;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 15px 0;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+}
+
+tr {
+    display: table-row;
+}
+
+th, td {
+    display: table-cell;
+    border: 1px solid #ccc;
+    padding: 4px 8px;
+}
+
+th {
+    font-weight: bold;
+}
+
+.figure .caption {
+    font-style: italic;
+}
+
 h1 {
-  color: #F00;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.5em;
-  font-weight: normal;
-  margin-bottom: 0;
+    font-size: 2em;
 }
 
-/* line 34, ../../compass/src/main.scss */
+h1 cite {
+    font-size: 26px;
+    margin: 0 2px;
+}
+
 h2 {
-  color: #DDD;
-  font-family: Helvetica, sans-serif;
-  font-size: 1.3em;
+    margin: 0;
+    padding: 15px 0 20px;
 }
 
-/* line 38, ../../compass/src/main.scss */
+.archives h2 {
+    margin-bottom: 15px;
+}
+
 h3 {
-  color: #CCC;
-  font-family: Helvetica, sans-serif;
-  font-size: 1em;
+    margin: 0;
 }
 
-/* line 42, ../../compass/src/main.scss */
-h4 {
-  color: #CCC;
-  font-family: Helvetica, sans-serif;
-  font-size: 0.9em;
+div.date {
+    color: #777;
+    display: inline-block;
 }
 
-/* line 46, ../../compass/src/main.scss */
-time, #sitename {
-  color: #c0c0c0;
-  font-size: 75%;
-  font-variant: small-caps;
+div.date p {
+    margin: 0 0 15px;
 }
 
-/* line 51, ../../compass/src/main.scss */
-img {
-  border: none;
+img.flattrbutton {
+    margin-top: 15px;
+    float: right;
 }
 
-/* line 55, ../../compass/src/main.scss */
-blockquote {
-  border-left: 1px solid #A5ABAB;
-  margin: 0px;
-  padding: 0 12px 0 12px;
+div.tags p {
+    float: right;
+    clear: both;
 }
 
-/* line 61, ../../compass/src/main.scss */
-p {
-  line-height: 30px;
-  margin: 30px auto;
-  text-indent: 0px;
+.field-list .field-name {
+    text-align: left;
+    padding-right: 15px;
 }
-
-/* line 65, ../../compass/src/main.scss */
-p.caption {
-  font-size: 80%;
-  margin-top: 0;
-}
-
-/* my own link style (Tastalian) */
 
 a {
-    color: #3B0;
     text-decoration: none;
 }
 
 a:hover {
-    background-color: #3B0;
-    color: white;
+    text-decoration: underline;
 }
 
-a:visited {
-    color: #F60;
+a, a:visited {
+    color: #2669AD;
 }
 
-a:visited:hover {
-    background-color: #F60;
-    color: white;
+.entry-overview {
+    margin-bottom: 35px;
 }
 
-/* line 78, ../../compass/src/main.scss */
-ul, ol {
-  padding: .5em 0em 1em 3.2em;
+.entry-overview h1 {
+    font-size: 1.5em;
+    margin: 0;
 }
 
-/* line 80, ../../compass/src/main.scss */
-ul li, ol li {
-  line-height: 30px;
-  padding: 6px 0 0 0;
+.entry-overview h2 {
+    padding: 0;
 }
 
-/* line 86, ../../compass/src/main.scss */
-strong {
-  color: #999;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: bold;
+.entry-overview .summary p {
+    margin: 0;
 }
 
-/* line 92, ../../compass/src/main.scss */
-tt, pre {
-  background-color: #2A2A2A;
-  font-family: Inconsolata, Monaco, monospace;
-  line-height: 1.2em;
+.tags {
+    margin-top: 20px;
 }
 
-/* line 98, ../../compass/src/main.scss */
-pre {
-  font-size: 0.8em;
-  overflow: auto;
-  padding: 10px;
+.tags:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
 
-/* line 104, ../../compass/src/main.scss */
-header {
-  padding-bottom: 20px;
+#disqus_thread {
+    margin-top: 30px;
 }
 
-/* line 106, ../../compass/src/main.scss */
-header a {
-  border-bottom: none;
+.align-center {
+    display: block;
+    margin: 0 auto;
 }
 
-/* line 108, ../../compass/src/main.scss */
-header a#page-title {
-  font-weight: bold;
+.align-right {
+    float: right;
+    margin-left: 28px;
 }
 
-/* line 112, ../../compass/src/main.scss */
-#article-list {
-  margin-top: 100px;
+.align-left {
+    float: left;
+    margin-right: 10px;
 }
 
-/* line 114, ../../compass/src/main.scss */
-#article-list ol li {
-  line-height: 1.2em;
-  list-style-type: none;
-  padding-bottom: 10px;
+.hidden {
+    display: none;
 }
 
-/* line 121, ../../compass/src/main.scss */
-footer {
-  background: #2A2A2A;
-  color: #CCC;
-  font-family: helvetica, sans-serif;
-  font-size: 13px;
-  letter-spacing: 4px;
-  margin-left: 20px;
+#right-side {
+    margin-top: 40px;
 }
 
-/* line 132, ../../compass/src/main.scss */
-footer li {
-  display: inline;
+#right-side .section-container {
+    text-align: right;
+    margin-bottom: 30px;
 }
 
-/* line 135, ../../compass/src/main.scss */
-footer p {
-  text-align: right;
+#right-side .section-container h3 {
+    text-decoration: underline;
+}
+
+#right-side .section-container ul {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#right-side .section-container ul li {
+    list-style: none;
+    font-size: 0.9em;
+}
+
+ul.tagcloud {
+  list-style: none;
+    padding: 0;
+}
+
+ul.tagcloud li {
+    display: inline-block;
+}
+
+li.tag-0 {
+    font-size: 150%;
+}
+
+li.tag-1 {
+    font-size: 120%;
+}
+li.tag-2 {
+    font-size: 90%;
+}
+li.tag-3 {
+    font-size: 60%;
+}
+
+#right-side #copyright {
+    font-size: 0.8em;
+    border-top: solid 0.5px #000;
 }
