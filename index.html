@@ -1,36 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ngyu.me</title>
+<html lang="en">
+<head>
         <meta charset="utf-8" />
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="./theme/static/css/style.css" rel="stylesheet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <link href="http://ngyu.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ngyu.me Full Atom Feed" />
-    </head>
+        <title>ngyu.me</title>
+        <link rel="stylesheet" href="./theme/css/main.css" />
+        <link href="http://ngyu.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="ngyu.me Atom Feed" />
 
-    <body id="index" class="archive">
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href=".">Home</a></li>
+        <!--[if IE]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="./">ngyu.me  <strong>not great yet useful</strong></a></h1>
+                <nav><ul>
                     <li><a href="./about/">About</a></li>
-                    <li><a href="./archives.html">Archives</a></li>
-                </ul>
-                <h3 class="text-muted"><a href=".">ngyu.me</a></h3>
-				<h2 class="text-muted">not great yet useful</h2>
-             </div>
-<section id="content" class="content">
+                    <li><a href="./category/pelican/">Pelican</a></li>
+                    <li><a href="./category/review.html">Review</a></li>
+                </ul></nav>
+        </header><!-- /#banner -->
 
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./posts/2013/12/03/using-pelican-themes/" rel="bookmark" title="Permalink to Using Pelican Themes">Using Pelican Themes</a></h2> </header>
-                <div class="entry-content"> <p>Using Pelican Themes (https://github.com/getpelican/pelican-themes)</p>
+            <aside id="featured" class="body">
+                <article>
+                    <h1 class="entry-title"><a href="./posts/2013/12/03/using-pelican-themes/">Using Pelican Themes</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2013-12-03T10:20:00+01:00">
+                Published: Tue 03 December 2013
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/ngyu.html">ngyu</a>
+        </address>
+<p>In <a href="./category/review.html">Review</a>. </p>
+<p>tags: <a href="./tags/pelican/">Pelican</a> </p>
+</footer><!-- /.post-info --><p>Using Pelican Themes (https://github.com/getpelican/pelican-themes)</p>
 <p>These instructions assume you have already read all the Pelican documentation, have a working site, and would now like to apply a non-default theme.</p>
-<p>First, choose a location to hold your themes. For this example, we'll use the directory ~/pelican-themes, but ...</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./posts/2011/12/03/GitHub-Pages-using-Pelican-in-ubuntu/" rel="bookmark" title="Permalink to GitHub Pages using Pelican in ubuntu">GitHub Pages using Pelican in ubuntu</a></h2> </header>
-                <div class="entry-content"> <ol>
+<p>First, choose a location to hold your themes. For this example, we'll use the directory ~/pelican-themes, but yours could be different. Clone the pelican-themes repository to that location on your local machine:</p>
+<p>git clone --recursive https://github.com/getpelican/pelican-themes ~/pelican-themes</p>
+<p>Now you should have your pelican-themes repository stored at ~/pelican-themes/.</p>
+<p>To use one of the themes, edit your Pelican settings file to include this line:</p>
+<p>THEME = "/home/user/pelican-themes/theme-name"</p>
+<p>So, for instance, to use the mnmlist theme, you would edit your settings file to include:</p>
+<p>THEME = "/home/user/pelican-themes/mnmlist"</p>
+<p>Save the changes to your settings file and then regenerate your site by using the Makefile you should already have set up using pelican-quickstart:</p>
+<p>make html</p>
+<p>Themes can also be specified directly via the -t ~/pelican-themes/theme-name parameter to the pelican command. If you want to edit your theme, make sure that any edits you make are made to the copy stored in ~/pelican-themes/theme-name. Any changes made to files stored in your site's output directory will be deleted the next time you generate your site.</p>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="./posts/2011/12/03/GitHub-Pages-using-Pelican-in-ubuntu/" rel="bookmark"
+                           title="Permalink to GitHub Pages using Pelican in ubuntu">GitHub Pages using Pelican in ubuntu</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2011-12-03T10:20:00+01:00">
+                Published: Sat 03 December 2011
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/ngyu.html">ngyu</a>
+        </address>
+<p>In <a href="./category/pelican/">Pelican</a>. </p>
+<p>tags: <a href="./tag/pelican/">Pelican</a> <a href="./tag/github/">GitHub</a> </p>
+</footer><!-- /.post-info -->                <ol>
 <li>virtual Python environments</li>
 </ol>
 <h1>install pip before installing virtualenv</h1>
@@ -43,27 +82,65 @@
 <h1>create a new virtual environment called ‘pelican' for Pelican, and activate it</h1>
 <p>virtualenv ~/virtualenvs/pelican
 cd ~/virtualenvs/pelican
-source ...</p> </div><!-- entry-content -->
-        </article>
-        <article class="hentry">
-                <header> <h2 class="entry-title"><a href="./posts/2010/12/03/my-first-review/" rel="bookmark" title="Permalink to My First Review">My First Review</a></h2> </header>
-                <div class="entry-content"> <p>Following is a review of my favorite mechanical keyboard.</p> </div><!-- entry-content -->
-        </article>
-<div class="pager">
-      <ul>
-                        <li class="previous disabled"><a>← Previous</a></li>
-                        <li class="next disabled"><a>Next →</a></li>
-      </ul>
-    </div>
-</section><!-- content -->
-            <footer id="contentinfo" class="footer">
-                    <nav class="pull-right bottom-nav">
-                        <a href="http://ngyu.me/feeds/all.atom.xml">RSS</a>
-                    </nav>
-                    <address id="about" class="vcard body">
-                    &copy; <a href=".">ngyu.me</a> Proudly powered by <a href="http://getpelican.com/">Pelican</a>
-                    </address><!-- /#about -->
-            </footer><!-- /#contentinfo -->
-        </div><!-- container -->
-    </body>
+source ...</p>
+                <a class="readmore" href="./posts/2011/12/03/GitHub-Pages-using-Pelican-in-ubuntu/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="./posts/2010/12/03/my-first-review/" rel="bookmark"
+                           title="Permalink to My First Review">My First Review</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2010-12-03T10:20:00+01:00">
+                Published: Fri 03 December 2010
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="./author/ngyu.html">ngyu</a>
+        </address>
+<p>In <a href="./category/review.html">Review</a>. </p>
+<p>tags: <a href="./tags/test/">test</a> </p>
+</footer><!-- /.post-info -->                <p>Following is a review of my favorite mechanical keyboard.</p>
+                <a class="readmore" href="./posts/2010/12/03/my-first-review/">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+<p class="paginator">
+    Page 1 / 1
+</p>
+                </section><!-- /#content -->
+        <section id="extras" class="body">
+                <div class="blogroll">
+                        <h2>blogroll</h2>
+                        <ul>
+                            <li><a href="http://getpelican.com/">Pelican</a></li>
+                            <li><a href="http://python.org/">Python.org</a></li>
+                            <li><a href="http://jinja.pocoo.org/">Jinja2</a></li>
+                            <li><a href="#">You can modify those links in your config file</a></li>
+                        </ul>
+                </div><!-- /.blogroll -->
+                <div class="social">
+                        <h2>social</h2>
+                        <ul>
+                            <li><a href="http://ngyu.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate">atom feed</a></li>
+
+                            <li><a href="#">You can add links in your config file</a></li>
+                            <li><a href="#">Another social link</a></li>
+                        </ul>
+                </div><!-- /.social -->
+        </section><!-- /#extras -->
+
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+
+                <p>The theme is by <a href="http://coding.smashingmagazine.com/2009/08/04/designing-a-html-5-layout-from-scratch/">Smashing Magazine</a>, thanks!</p>
+        </footer><!-- /#contentinfo -->
+
+</body>
 </html>
