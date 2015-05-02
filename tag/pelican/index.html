@@ -1,168 +1,191 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en"
+>
 <head>
+    <title>Pelican - not great yet useful</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Entries tagged "Pelican" - not great yet useful</title>
 
-    <!-- meta -->
-    <meta charset="utf-8" />
+
+
     <meta name="author" content="ngyu" />
-    <meta name="dc.language" content="en" />
-    <meta name="dc.license" content="">
+    <meta name="keywords" content="Pelican" />
 
-    <!-- favicon -->
-    <link rel="icon" href="../../theme/favicon.ico" type="image/x-icon">
+    <!-- Open Graph tags -->
+        <meta property="og:site_name" content="not great yet useful" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:title" content="not great yet useful"/>
+        <meta property="og:url" content="../.."/>
+        <meta property="og:description" content="not great yet useful"/>
 
-    <!-- newsfeeds -->
-        <link href="http://ngyu.me/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="not great yet useful Full Atom Feed" />
 
-    <!-- assets -->
-    <!--[if lt IE 9]>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-   
-    <link href="https://fonts.googleapis.com/css?family=Linden+Hill:400,400italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../../theme/css/simplegrid.css" type="text/css">
-    <link rel="stylesheet" href="../../theme/css/main.css" type="text/css">
-    <link rel="stylesheet" href="../../theme/css/pygments.css" type="text/css">
-    <!--[if lt IE 8]>
-        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" type="text/css">
-    <![endif]-->
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="../../theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="../../theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="../../theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../theme/css/style.css" type="text/css"/>
+
+        <link href="../../feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="not great yet useful ATOM Feed"/>
 
 </head>
-
 <body>
 
-   <div class="grid grid-pad">
-     <div class="col-1-1">        
-       <ul id="mainnav">
-          <li><a href="../..">home</a></li>
-          <li><a href="../../about/">About</a></li>
-       </ul>
-       <div id="blogtitle"><a href="../..">not great yet useful</a></div>
-       <div id="blogsubtitle"><a href="../.."></a></div>
-     </div>
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="../../" class="navbar-brand">
+not great yet useful            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                         <li><a href="../../about/">
+                             About
+                          </a></li>
+                        <li >
+                            <a href="../../category/pelican/">Pelican</a>
+                        </li>
+                        <li >
+                            <a href="../../category/review.html">Review</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="../../archives/"><i class="fa fa-th-list"></i><span class="icon-label">Archives</span></a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
     </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
 
-    <div class="grid grid-pad">
-       <div id="left-side" class="col-8-12">
-          <section id="content" class="hyphenate">
+            <article>
+                <h2><a href="../../posts/2013/12/03/using-pelican-themes/">Using Pelican Themes</a></h2>
+                <div class="summary"><p>Using Pelican Themes (https://github.com/getpelican/pelican-themes)</p>
+<p>These instructions assume you have already read all the Pelican documentation, have a working site, and would now like to apply a non-default theme.</p>
+<p>First, choose a location to hold your themes. For this example, we'll use the directory ~/pelican-themes, but ...</p>
+                    <a class="btn btn-default btn-xs" href="../../posts/2013/12/03/using-pelican-themes/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+            <article>
+                <h2><a href="../../posts/2011/12/03/GitHub-Pages-using-Pelican-in-ubuntu/">GitHub Pages using Pelican in ubuntu</a></h2>
+                <div class="summary"><ol>
+<li>virtual Python environments</li>
+</ol>
+<h1>install pip before installing virtualenv</h1>
+<h1>install pip by typing:</h1>
+<p>sudo apt-get install python-pip</p>
+<h1>Install virtualenv via pip:</h1>
+<p>pip install virtualenv</p>
+<h1>install ‘virtualenv' by typing:</h1>
+<p>sudo apt-get install python-virtualenv</p>
+<h1>create a new virtual environment called ‘pelican' for Pelican, and activate it</h1>
+<p>virtualenv ~/virtualenvs/pelican
+cd ~/virtualenvs/pelican
+source ...</p>
+                    <a class="btn btn-default btn-xs" href="../../posts/2011/12/03/GitHub-Pages-using-Pelican-in-ubuntu/">more ...</a>
+                </div>
+            </article>
+            <hr/>
 
-    <h1 class="title">Entries tagged “#Pelican”</h1>        <article class="entry-overview">
-            <div class="date">Tue 03 December 2013</div>
-            <div class="detail">
-                <header><h3>
-                    <a href="../../posts/2013/12/03/using-pelican-themes/" rel="bookmark" title="Permalink to Using Pelican Themes">
-                        Using Pelican Themes
-                    </a>
-                </h3></header>
-                <div class="summary">Using Pelican Themes (https://github.com/getpelican/pelican-themes) These instructions assume you have already read all the Pelican documentation, have a working site, and would now like to apply a non-default theme. First, choose a location to hold your themes. For this example, we'll use the directory ~/pelican-themes, but ...</div>
-            </div>
-        </article>
-        <article class="entry-overview">
-            <div class="date">Sat 03 December 2011</div>
-            <div class="detail">
-                <header><h3>
-                    <a href="../../posts/2011/12/03/GitHub-Pages-using-Pelican-in-ubuntu/" rel="bookmark" title="Permalink to GitHub Pages using Pelican in ubuntu">
-                        GitHub Pages using Pelican in ubuntu
-                    </a>
-                </h3></header>
-                <div class="summary">virtual Python environments install pip before installing virtualenv install pip by typing: sudo apt-get install python-pip Install virtualenv via pip: pip install virtualenv install ‘virtualenv' by typing: sudo apt-get install python-virtualenv create a new virtual environment called ‘pelican' for Pelican, and activate it virtualenv ~/virtualenvs/pelican cd ~/virtualenvs/pelican source ...</div>
-            </div>
-        </article>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
 
-          </section>
-       </div>
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
+                <li class="list-group-item"><a href="#"><i class="fa fa-another-social-link-square fa-lg"></i> Another social link</a></li>
+              </ul>
+            </li>
 
-       <div id="right-side" class="col-4-12">
 
-<div class="section-container">
-   <h3>Blogroll</h3>
-   <ul>
-      <li><a href="http://getpelican.com/" target="_blank">Pelican <i class="fa fa-globe fa-fw"></i></a></li>
-      <li><a href="http://python.org/" target="_blank">Python.org <i class="fa fa-globe fa-fw"></i></a></li>
-      <li><a href="http://jinja.pocoo.org/" target="_blank">Jinja2 <i class="fa fa-globe fa-fw"></i></a></li>
-      <li><a href="#" target="_blank">You can modify those links in your config file <i class="fa fa-globe fa-fw"></i></a></li>
-   </ul>
-</div>
 
-<div class="section-container">
-   <h3>Social Network</h3>
-   <ul>
-      <li>
-        <a href="#" target="_blank">You can add links in your config file&nbsp;
-           <i class="fa fa-globe fa-fw"></i>
-        </a>
-      </li>
-      <li>
-        <a href="#" target="_blank">Another social link&nbsp;
-           <i class="fa fa-globe fa-fw"></i>
-        </a>
-      </li>
-   </ul>
-</div>
-
-<div class="section-container">
-   <h3>Categories</h3>
-   <ul>
-        <li><a href="../../category/pelican/">Pelican <i class="fa fa-folder-open fa-fw"></i></a></li>
-        <li><a href="../../category/review.html">Review <i class="fa fa-folder-open fa-fw"></i></a></li>
-   </ul>
-</div>
-
-<div class="section-container">
-   <h3>Tags</h3>
-   <ul class="tagcloud">
-        <li class="tag-1"><a href="../../tags/pelican/">#Pelican</a></li>
-        <li class="tag-4"><a href="../../tags/test/">#test</a></li>
-        <li class="tag-4"><a href="../../tag/github/">#GitHub</a></li>
-   </ul>
-</div>
-
-<div class="section-container">
-   <h3>Feeds</h3>
-   <ul>
-      <li><a href="../../feeds/all.atom.xml" rel="alternate">atom feed <i class="fa fa-rss fa-fw"></i></a></li>
-   </ul>
-</div>
-
-<div class="section-container">
-   <h3>Archives</h3>
-   <ul>
-      <li><a href="../../posts/2013/12/index.html">December 2013</a></li>
-      <li><a href="../../posts/2011/12/index.html">December 2011</a></li>
-   </ul>
-</div>
-
-          <div class="section-container" id="copyright">
-             <p>This Blog generated by <a href="http://getpelican.com/">Pelican</a> using <a href="https://github.com/habibillah/pujangga">Pujangga</a> theme. All content on this blog, unless stated otherwise, is licensed under the <a href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0 International license</a>.</p>
-          </div>
-       </div>
+            <li class="list-group-item"><a href="../../tags/"><h4><i class="fa fa-tags fa-lg"></i><span class="icon-label">Tags</span></h4></a>
+                <ul class="list-group " id="tags">
+                    <li class="list-group-item tag-1">
+                        <a href="../../tags/pelican/">
+                            Pelican
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../tag/github/">
+                            GitHub
+                        </a>
+                    </li>
+                    <li class="list-group-item tag-4">
+                        <a href="../../tags/test/">
+                            test
+                        </a>
+                    </li>
+                </ul>
+            </li>
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
     </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2013 ngyu
+            &middot; Powered by <a href="https://github.com/DandyDev/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="../../theme/js/jquery.min.js"></script>
 
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-    </script>
- 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="../../theme/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="../../theme/js/hyphenator.js"></script>
-    <script type="text/javascript">
-      Hyphenator.config({
-          donthyphenateclassname: 'docutils',
-          useCSS3hyphenation: true
-      });
-      Hyphenator.run();
-    </script>
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="../../theme/js/respond.min.js"></script>
+
 
 </body>
-
 </html>
